@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Random Image from Gifphy",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click to see image"
+  },
+  "permissions": [
+      "activeTab",
+      "https://api.giphy.com/",
+      "https://pixabay.com/api/",
+      "tabs"
+  ]
+}

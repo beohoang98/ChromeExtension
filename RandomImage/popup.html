@@ -1,0 +1,43 @@
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        body {
+            font-family: sans-serif;
+            height: 50px;
+            margin: 0;
+            border-radius: 10px;
+            overflow: visible;
+        }
+        img {
+            height: 100%;
+            border-radius: 10px;
+        }
+        #image-wrap {
+            float: left;
+            height: 0px;
+            min-width: 300px;
+        }
+        #logo {
+            width: 100%;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+        #logo img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="giphy.png" alt="">
+    </div>
+    <p id="status"></p>
+    <div id="image-wrap">
+        <img height="100%" id="image" src=""></img>
+    </div>
+    <script src="popup.js"></script>
+</body>
