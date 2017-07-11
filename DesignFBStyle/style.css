@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#rightCol {
+    display: none;
+}
+#contentArea {
+    float: none !important;
+    width: 100% !important;
+    right: 0;
+}
+#leftCol {
+    display: none !important;
+}
+#contentCol {
+    background: rgba(0,0,0,0) !important;
+    width: 100% !important;
+}
+
+._5pat {
+    display: inline-block;
+    width: 33.33%;
+    height: 45vh;
+    background: none;
+}
+._5pat > div:first-child {
+    margin: 5px;
+    max-height: 100%;
+    overflow: hidden;
+    border-top: 20px solid #3f3fdf !important;
+    border-radius: 10px;
+    background: #fff;
+
+    transition: 1s;
+}
+._5pat:hover > div:first-child{
+    max-height: 200%;
+    z-index: 10;
+    overflow: auto;
+}
+
+.mtm a, .mtm div {
+    width: 100% !important;
+    height: auto !important;
+}
+.uiScaledImageContainer {
+    width: 100% !important;
+    height: auto !important;
+}
+.fwb {
+    font-size: 1.5em;
+}
