@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to top right, #800, #008);
+    background-size: contain !important;
+    background-attachment: fixed !important;
 }
 
 #rightCol {
@@ -21,10 +22,13 @@ body {
     background: rgba(0, 0, 0, 0) !important;
     width: 100% !important;
 }
-
-._4ikz ._5pat:last-child {
-    width: 100%;
+#pagelet_composer {
+    box-shadow: 0px 10px 20px -5px black;
 }
+
+/*._4ikz ._5pat:last-child {
+    width: 100%;
+}*/
 ._4ikz ._5pat:last-child > div:first-child {
     max-height: none !important;
 }
@@ -36,35 +40,49 @@ body {
  #substream_0 ._5pat, #substream_1 ._5pat {
      width: 100%;
  }
+
+.fbChatSidebar {
+    background: transparent;
+}
+
+/*parent post is here*/
+._4ikz > div > div > div {
+    display: flex;
+    flex-flow: row wrap;
+}
+._4lh .fbTimelineTimePeriod {
+    background-color: transparent !important;
+}
+
+
+ /*post in here*/
 ._5pat {
     display: inline-block;
+    margin: auto;
     width: 50%;
-    min-width: 300px;
-    background: none;
-}
-#contentCol ._5pat:nth-child(2n)::after {
-    content: "";
-    display: block;
-    clear: both;
+    min-width: 500px;
+    background: transparent;
 }
 
 ._5pat > div:first-child {
-    margin: 5px;
+    margin: 2em 1em 2em 0px;
 
     overflow: hidden;
-    max-height: 400px;
+    max-height: 100vh;
 
-    border-top: 20px solid #3f3fdf !important;
-    border-radius: 10px;
-    background: #fff;
+    border-radius: 0px;
+    background-image: url("http://images.naldzgraphics.net/2013/06/30-thirty-WHITE-PAINTED.jpg");
+    box-shadow: 0px 20px 25px -10px black;
+
     transition: 0.5s;
 }
 
-._5pat:hover > div:first-child {
+._5pat > div:first-child:hover {
     z-index: 10;
     overflow: auto;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+/*background of post inside a post*/
 
 .mtm a, .mtm>div {
     margin: 0 auto;
@@ -77,11 +95,29 @@ body {
     font-size: 1.5em;
 }
 
-._42fz img {
+/*display of liked people*/
+._1g5v+._4arz, ._ipo {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25em;
+    background-color: transparent;
+}
+
+/*this is avatar in the sidebar*/
+._42fz img, ._4ld- img {
     border-radius: 100%;
-    box-shadow: 0px 2px 2px black;
+    box-shadow: 0px 5px 10px black;
     border: 5px solid #fff;
     box-sizing: border-box;
+}
+
+/*name of the person in the sidebar*/
+._55lr, ._364g {
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-shadow: 0px 2px 5px black;
 }
 
 ._55lp::after {
@@ -92,6 +128,7 @@ body {
 
 ._55ln {
     height: auto;
+    color: #fff;
 }
 
 ._55lq, ._55lq>div, ._55lq img {
@@ -105,7 +142,7 @@ body {
 ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
-    background-color: #ccc;
+    background-color: #111;
     border-radius: 1em;
 }
 ::-webkit-scrollbar:hover {
