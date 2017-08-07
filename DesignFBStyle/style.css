@@ -1,4 +1,4 @@
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
     background-size: contain !important;
     background-attachment: fixed !important;
@@ -15,7 +15,39 @@ body {
 }
 
 #leftCol {
-    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 15px;
+    z-index: 2;
+}
+._bui ._5afe {
+    /*color of leftCol*/
+    color: #fff;
+    text-shadow: 0px 2px 5px black;
+}
+._55y4 .sectionDragHandle {
+    /*color of nav header*/
+    color: #ccc;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+    text-shadow: 0px 2px 5px black;
+}
+#sideNav #left_nav_section_nodes {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    padding-left: 1em;
+}
+#leftCol:hover #sideNav #left_nav_section_nodes {
+    visibility: visible;
+    opacity: 1;
+}
+.sideNavItem {
+    transition: 0.5s;
+}
+.sideNavItem:hover {
+    transform: translateX(15px);
+    box-shadow: 0px 5px 30px black;
 }
 
 #contentCol {
@@ -26,12 +58,6 @@ body {
     box-shadow: 0px 10px 20px -5px black;
 }
 
-/*._4ikz ._5pat:last-child {
-    width: 100%;
-}*/
-._4ikz ._5pat:last-child > div:first-child {
-    max-height: none !important;
-}
 
  #substream_0, #substream_1 {
      display: inline-block;
@@ -43,6 +69,11 @@ body {
 
 .fbChatSidebar {
     background: transparent;
+}
+
+/*navbar in here*/
+._3u6q ._2s1y {
+    box-shadow: 0px 5px 20px black;
 }
 
 /*parent post is here*/
@@ -63,12 +94,18 @@ body {
     min-width: 500px;
     background: transparent;
 }
+._4-u2 {
+    /*border of them*/
+    border: none;
+    padding: 0;
+}
 
 ._5pat > div:first-child {
-    margin: 2em 1em 2em 0px;
+    margin: 1em;
+    padding-right: 5px;
 
+    max-height: 70vh;
     overflow: hidden;
-    max-height: 100vh;
 
     border-radius: 0px;
     background-image: url("http://images.naldzgraphics.net/2013/06/30-thirty-WHITE-PAINTED.jpg");
@@ -77,7 +114,7 @@ body {
     transition: 0.5s;
 }
 
-._5pat > div:first-child:hover {
+._5pat:hover > div:first-child {
     z-index: 10;
     overflow: auto;
 }
@@ -142,7 +179,7 @@ body {
 ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
-    background-color: #111;
+    background-color: transparent;
     border-radius: 1em;
 }
 ::-webkit-scrollbar:hover {
@@ -155,7 +192,59 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #558;
     border-radius: 1em;
+    box-shadow: 0px 5px 10px black;
 }
 ::-webkit-resizer,
 ::-webkit-scrollbar-button,
 ::-webkit-scrollbar-corner {display:none}
+
+/* IN THE FRIENDS LIST */
+._2w3>._30f {
+    background-color: transparent;
+}
+#pagelet_timeline_medley_friends ._ohe, ._ohf {
+    /*the avatar*/
+    float: none;
+    margin: auto;
+}
+#pagelet_timeline_medley_friends ._42ef {
+    /*the name*/
+    margin: auto;
+}
+html ._262m ._698 {
+    width: 120px;
+    margin: 15px;
+    padding: 5px;
+    text-shadow: 0px 2px 5px black;
+    border: none;
+}
+#pagelet_timeline_medley_friends ._698 ._5q6s::after {
+    display: none;
+}
+#pagelet_timeline_medley_friends ._262m {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.uiProfileBlockContent ._-kb a {
+    /*size of name*/
+    font-size: 0.75em;
+}
+#pagelet_timeline_medley_friends ._6b {
+    height: auto !important;
+    margin: 5px 0;
+}
+#pagelet_timeline_medley_friends ._8o .img {
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 0px 10px 30px -5px black;
+    border-radius: 100%;
+}
+#pagelet_timeline_medley_friends ._5t4x {
+    margin: 0;
+}
+#pagelet_timeline_medley_friends ._517h {
+    /*the button "Friend"*/
+    box-shadow: 0px 5px 10px -2px black;
+}
