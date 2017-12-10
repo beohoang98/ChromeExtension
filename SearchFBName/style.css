@@ -1,0 +1,10 @@
+body {
+	display: inline-block;
+	margin: 0;
+	width: 310px;
+	height: 400px;
+}
+
+iframe {
+	border: none;
+}
