@@ -1,0 +1,101 @@
+@primaryColor: #c44;
+
+#droplink-wrap {
+	display: flex;
+	position: fixed;
+	left: 15px;
+	top: 15px;
+	width: 100px;
+	height: 100px;
+	background: rgba(0,0,0,0.2);
+	&:hover {
+		background: rgba(0,0,0, 0.5);
+	}
+	&:active {
+		transition: 0s;
+		background: rgba(0,0,0,0.7);
+	}
+
+	border-radius: 50%;
+	z-index: 151097;
+	transition: background 0.27s,
+				top 0.07s,
+				left 0.07s;
+
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.7));
+	.wrap {
+		display: flex;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-image: url("icon.png");
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	input {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		margin: auto;
+		padding: 0;
+		opacity: 0;
+	}
+	.show-link {
+		position: absolute;
+		left: 0;
+		top: 100%;
+
+		width: 200px;
+		overflow-x: hidden;
+		min-height: 10px;
+		border-bottom: 5px solid @primaryColor;
+
+		a {
+			display: block;
+			text-align: justify;
+			margin-bottom: 1em;
+		}
+	}
+}
+#droplink-snippet {
+	position: fixed;
+	max-width: 500px;
+	top: 1em;
+	right: 3em;
+
+	z-index: 151097;
+}
+.droplink-tab {
+	width: 100%;
+	margin-top: 1em;
+
+	box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
+	background: @primaryColor;
+	border-radius: 1em;
+	color: #fff;
+
+	transition: 0.2s;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	overflow: hidden;
+	.site-name {
+		font-family: serif;
+		margin: auto;
+		padding: 0 1em 0 1em;
+		max-width: 500px;
+		overflow: hidden;
+	}
+	.site-favicon {
+		background: #fff;
+		margin: auto;
+		width: 3em;
+		height: 3em;
+	}
+}
