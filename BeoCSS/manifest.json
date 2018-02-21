@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+
+    "name": "BeoCSS",
+    "description": "Stylish website by Beo",
+    "version": "0.1",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Click to active or deactive"
+    },
+    "content_scripts":[{
+        "matches":["*://*/*"],
+        "js":["inject.js"]
+    }],
+    "icons": {
+        "32": "icon/icon32.png",
+        "64": "icon/icon64.png",
+        "128": "icon/icon128.png",
+        "256": "icon/icon256.png"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "web_accessible_resources": [
+        "inject.json", "content/*"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "www.24h.com.vn": {
+        "js": "24h/24h.js",
+        "css": "24h/24h.css"
+    },
+    "nhaccuatui.com": {
+        "js": "nct/nhaccuatui.js",
+        "css": "nct/nhaccuatui.css"
+    }
+}
