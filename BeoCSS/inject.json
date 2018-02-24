@@ -6,5 +6,9 @@
     "nhaccuatui.com": {
         "js": "nct/nhaccuatui.js",
         "css": "nct/nhaccuatui.css"
+    },
+    "facebook.com": {
+        "js": "facebook/beo_css_fb.js",
+        "css": "facebook/beo_css_fb.css"
     }
 }
