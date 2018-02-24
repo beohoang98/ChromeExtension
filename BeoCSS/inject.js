@@ -16,6 +16,10 @@
         style_add.id = "beocss-css";
         style_add.href = chrome.extension.getURL("content/"+manifest[domain]["css"]);
 
+        let script_add = document.createElement("script");
+        script_add.src = chrome.extension.getURL("content/"+manifest[domain]["js"]);
+
         document.body.prepend(style_add);
+        document.body.prepend(script_add);
     }
 })();
