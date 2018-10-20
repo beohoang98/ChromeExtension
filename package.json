@@ -1,0 +1,26 @@
+{
+  "name": "my-chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "sass": "^1.14.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beohoang98/my-chrome-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beohoang98/my-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/beohoang98/my-chrome-extension#readme"
+}
